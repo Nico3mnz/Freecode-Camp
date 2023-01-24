@@ -7,18 +7,24 @@
     <body>
         <p id="description">A survey form to test my skills in HTML and CSS</p>
         <form id="survey-form">
-            <label for="name" id="name-label">Enter Your Name: <input id="name" type="text" placeholder="Enter Your Name" required /></label>
-            <label for="email" id="email-label">Enter Your E-mail: <input id="email" type="text" placeholder="Enter Your E-mail" required /></label>
-            <label for="age" id="number-label">Enter Your Age: <input id="number" type="number" min="18" max="99" placeholder="Enter Your Age"></label>
-            <select id="dropdown">
-                <option></option>
-                <option></option>
-            </select>
-            <input name="Input 1" value="input1" type="radio">
-            <input name="Input 2" value="input2" type="radio">
-            <input type="checkbox">
-            <input type="checkbox">
-            <textarea placeholder="Write your Bio"></textarea>
+            <fieldset>
+                <label for="name" id="name-label">Enter Your Name: <input id="name" type="text" placeholder="Enter Your Name" required /></label>
+                <label for="email" id="email-label">Enter Your E-mail: <input id="email" type="text" placeholder="Enter Your E-mail" required /></label>
+                <label for="age" id="number-label">Enter Your Age: <input id="number" type="number" min="18" max="99" placeholder="Enter Your Age"></label>
+                <p>Where do you live right now?</p>
+                <select id="dropdown">
+                    <option>Uruguay</option>
+                    <option>Argentina</option>
+                </select>
+                <input name="Input 1" value="input1" type="radio">
+                <input name="Input 2" value="input2" type="radio">
+                <p>Are you allergic to something?</p><input type="checkbox" value="allergic">
+                <p>Do you suffer any chronic disease?</p><input type="checkbox" value="chronic">
+                <label for="bio">Write a short description about yourself
+                    <textarea placeholder="Write your Bio"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" id="submit">
         </form>
     </body>
 </html>
